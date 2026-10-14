@@ -1,0 +1,23 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "screenshot-to-code-marketplace",
+  "description": "Official marketplace for the Screenshot to Code plugin — convert screenshots, mockups, and designs into clean frontend code using AI.",
+  "owner": {
+    "name": "Abi Raja",
+    "email": "abimanyuraja@gmail.com",
+    "url": "https://screenshottocode.com"
+  },
+  "plugins": [
+    {
+      "name": "screenshot-to-code",
+      "description": "Convert screenshots, mockups, Figma designs, and screen recordings into clean, functional code using AI. Supports HTML+Tailwind, HTML+CSS, React, Vue, Bootstrap, and Ionic.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Abi Raja"
+      },
+      "category": "development",
+      "source": "./claude-plugin",
+      "homepage": "https://screenshottocode.com"
+    }
+  ]
+}

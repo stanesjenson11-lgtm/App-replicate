@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin.json",
+  "name": "screenshot-to-code",
+  "displayName": "Screenshot to Code",
+  "version": "1.0.0",
+  "description": "Convert screenshots, mockups, Figma designs, and screen recordings into clean, functional code using AI. Supports HTML+Tailwind, HTML+CSS, React, Vue, Bootstrap, and Ionic stacks.",
+  "author": {
+    "name": "Abi Raja",
+    "email": "abimanyuraja@gmail.com",
+    "url": "https://screenshottocode.com"
+  },
+  "repository": "https://github.com/stanesjenson11-lgtm/App-replicate",
+  "homepage": "https://screenshottocode.com",
+  "license": "MIT",
+  "keywords": [
+    "screenshot",
+    "code-generation",
+    "frontend",
+    "html",
+    "css",
+    "react",
+    "tailwind",
+    "figma",
+    "mockup",
+    "ui",
+    "design-to-code"
+  ]
+}
