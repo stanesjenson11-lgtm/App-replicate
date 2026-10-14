@@ -16,7 +16,7 @@
       },
       "source": {
         "source": "git-subdir",
-        "url": "https://github.com/abi/screenshot-to-code.git",
+        "url": "https://github.com/stanesjenson11-lgtm/App-replicate.git",
         "path": "claude-plugin",
         "ref": "main"
       }
