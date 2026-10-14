@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "screenshot-to-code-mcp"
+version = "1.0.0"
+description = "MCP server for screenshot-to-code: convert screenshots and designs into clean frontend code"
+authors = ["Abi Raja <abimanyuraja@gmail.com>"]
+license = "MIT"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+mcp = {version = "^1.0", extras = ["cli"]}
+httpx = "^0.28.1"
+pillow = "^10.3.0"
+pillow-heif = "^0.18.0"
+pydantic = "^2.10"
+openai = "2.16.0"
+anthropic = "^0.84.0"
+google-genai = "^1.16.1"
+python-dotenv = "^1.0.0"
+beautifulsoup4 = "^4.12.2"
+aiohttp = "^3.9.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

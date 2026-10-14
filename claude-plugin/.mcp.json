@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "screenshot-to-code": {
+      "command": "python",
+      "args": ["mcp-server/server.py"],
+      "cwd": "${pluginDir}",
+      "env": {
+        "OPENAI_API_KEY": "${env:OPENAI_API_KEY}",
+        "ANTHROPIC_API_KEY": "${env:ANTHROPIC_API_KEY}",
+        "GEMINI_API_KEY": "${env:GEMINI_API_KEY}",
+        "REPLICATE_API_KEY": "${env:REPLICATE_API_KEY}"
+      }
+    }
+  }
+}

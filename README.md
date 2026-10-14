@@ -103,6 +103,52 @@ docker-compose up -d --build
 
 The app will be up and running at http://localhost:5173. Note that you can't develop the application with this setup, as file changes won't trigger a rebuild.
 
+## 🔌 Claude Plugin (MCP)
+
+Screenshot to Code is available as a **Claude Code Plugin** powered by the Model Context Protocol (MCP). This lets you use screenshot-to-code directly inside Claude Code or Claude Desktop.
+
+### Install from Marketplace
+
+```bash
+# Add the marketplace
+/plugin marketplace add abi/screenshot-to-code
+
+# Install the plugin
+/plugin install screenshot-to-code@screenshot-to-code-marketplace
+```
+
+### Or install locally
+
+```bash
+# Test the plugin from a local checkout
+claude --plugin-dir ./claude-plugin
+```
+
+### Available MCP Tools
+
+| Tool | Description |
+|------|-------------|
+| `screenshot_to_code` | Convert a screenshot/mockup into frontend code |
+| `update_code` | Update existing code based on instructions |
+| `generate_images` | Generate images from text prompts |
+| `edit_images` | Edit or upscale existing images |
+| `extract_assets` | Extract visual assets from screenshots |
+| `remove_backgrounds` | Remove image backgrounds |
+
+### Setup
+
+Set your API keys as environment variables (or in `backend/.env`):
+
+```bash
+export OPENAI_API_KEY="sk-..."      # At least one LLM key required
+export ANTHROPIC_API_KEY="sk-ant-..."
+export GEMINI_API_KEY="..."
+export REPLICATE_API_KEY="r8_..."    # Recommended for image tools
+```
+
+Then use it in Claude:
+> "Use screenshot_to_code to convert this screenshot into React + Tailwind code."
+
 ## 🙋‍♂️ FAQs
 
 - **I'm running into an error when setting up the backend. How can I fix it?** [Try this](https://github.com/abi/screenshot-to-code/issues/3#issuecomment-1814777959). If that still doesn't work, open an issue.
